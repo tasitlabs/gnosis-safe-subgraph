@@ -1,3 +1,5 @@
-# Example Subgraph
+# Tasit The Graph Hackathon Subgraph
 
-An example to help you get started with The Graph. For more information see the docs on https://thegraph.com/docs/.
+It's still T.B.D. which contracts this subgraph will index.
+
+For more information see [The Graph docs](https://thegraph.com/docs/).
