@@ -1,6 +1,6 @@
 specVersion: 0.0.1
-description: Tasit The Graph Hackathon Subgraph
-repository: https://github.com/tasitlabs/the-graph-hackathon-subgraph
+description: Gnosis Safe
+repository: https://github.com/tasitlabs/gnosis-safe-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
