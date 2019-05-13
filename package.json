@@ -1,14 +1,14 @@
 {
-  "name": "the-graph-hackathon-subgraph",
+  "name": "gnosis-safe-subgraph",
   "version": "0.1.0",
   "scripts": {
     "build-contract": "solc contracts/Gravity.sol --abi -o abis --overwrite && solc contracts/Gravity.sol --bin -o bin --overwrite",
-    "create": "graph create tasitlabs/the-graph-hackathon-subgraph --node https://api.thegraph.com/deploy/",
-    "create-local": "graph create tasitlabs/the-graph-hackathon-subgraph --node http://127.0.0.1:8020",
+    "create": "graph create tasitlabs/gnosis-safe-subgraph --node https://api.thegraph.com/deploy/",
+    "create-local": "graph create tasitlabs/gnosis-safe-subgraph --node http://127.0.0.1:8020",
     "codegen": "graph codegen --debug --output-dir src/types/",
     "build": "graph build --debug",
-    "deploy": "graph deploy tasitlabs/the-graph-hackathon-subgraph --debug --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy-local": "graph deploy tasitlabs/the-graph-hackathon-subgraph --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    "deploy": "graph deploy tasitlabs/gnosis-safe-subgraph --debug --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy-local": "graph deploy tasitlabs/gnosis-safe-subgraph --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.11.2",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tasitlabs/the-graph-hackathon-subgraph.git"
+    "url": "https://github.com/tasitlabs/gnosis-safe-subgraph.git"
   },
   "license": "MIT"
 }
