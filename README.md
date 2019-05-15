@@ -4,4 +4,4 @@ This subgraph indexes new deployments of contract-based accounts for users of th
 
 For more information see the [Gnosis Safe docs](https://gnosis-safe.readthedocs.io/en/latest/) and/or the [docs for The Graph](https://thegraph.com/docs/).
 
-Built by [Tasit](https://tasit.io)
+Built by the [Tasit](https://tasit.io) team.
