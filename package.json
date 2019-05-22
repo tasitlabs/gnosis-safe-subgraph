@@ -2,7 +2,7 @@
   "name": "gnosis-safe-subgraph",
   "version": "0.1.0",
   "scripts": {
-    "build-contract": "solc contracts/Gravity.sol --abi -o abis --overwrite && solc contracts/Gravity.sol --bin -o bin --overwrite",
+    "build-contract": "solc contracts/ProxyFactory.sol --standard-json --abi -o abis --overwrite && solc contracts/ProxyFactory.sol --bin -o bin --overwrite",
     "create": "graph create tasitlabs/gnosis-safe --node https://api.thegraph.com/deploy/",
     "create-local": "graph create tasitlabs/gnosis-safe --node http://127.0.0.1:8020",
     "codegen": "graph codegen --debug --output-dir src/types/",
@@ -11,14 +11,14 @@
     "deploy-local": "graph deploy tasitlabs/gnosis-safe --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "^0.11.2",
-    "@graphprotocol/graph-ts": "^0.11.0"
+    "@graphprotocol/graph-cli": "^0.12.0",
+    "@graphprotocol/graph-ts": "^0.12.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
     "truffle": "^5.0.4",
-    "truffle-contract": "^4.0.5",
+    "truffle-contract": "^4.0.17",
     "truffle-hdwallet-provider": "^1.0.4"
   },
   "repository": {

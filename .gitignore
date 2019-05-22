@@ -35,6 +35,9 @@ build/Release
 # Any build output
 build/**/*
 
+# Any bin output
+bin/**/*
+
 # Dependency directories
 node_modules/
 jspm_packages/
