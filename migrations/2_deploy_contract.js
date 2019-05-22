@@ -1,5 +1,5 @@
-const GravatarRegistry = artifacts.require('./GravatarRegistry.sol')
+const ProxyFactory = artifacts.require("./ProxyFactory.sol");
 
 module.exports = async function(deployer) {
-  await deployer.deploy(GravatarRegistry)
-}
+  await deployer.deploy(ProxyFactory);
+};

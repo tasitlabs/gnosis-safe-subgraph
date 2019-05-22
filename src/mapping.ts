@@ -1,22 +1,8 @@
-import { NewGravatar, UpdatedGravatar } from './types/Gravity/Gravity'
-import { Gravatar } from './types/schema'
+import { ProxyCreation } from "./types/ProxyFactory/ProxyFactory";
+import { ContractBasedAccount } from "./types/schema";
 
-export function handleNewGravatar(event: NewGravatar): void {
-  let gravatar = new Gravatar(event.params.id.toHex())
-  gravatar.owner = event.params.owner
-  gravatar.displayName = event.params.displayName
-  gravatar.imageUrl = event.params.imageUrl
-  gravatar.save()
-}
-
-export function handleUpdatedGravatar(event: UpdatedGravatar): void {
-  let id = event.params.id.toHex()
-  let gravatar = Gravatar.load(id)
-  if (gravatar == null) {
-    gravatar = new Gravatar(id)
-  }
-  gravatar.owner = event.params.owner
-  gravatar.displayName = event.params.displayName
-  gravatar.imageUrl = event.params.imageUrl
-  gravatar.save()
+export function handleNewProxy(event: ProxyCreation): void {
+  let contractBasedAccount = new ContractBasedAccount(event.params.id.toHex());
+  contractBasedAccount.address = event.params.proxy;
+  contractBasedAccount.save();
 }
