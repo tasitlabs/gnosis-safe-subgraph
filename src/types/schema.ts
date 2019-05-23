@@ -44,4 +44,13 @@ export class ContractBasedAccount extends Entity {
   set id(value: string) {
     this.set("id", Value.fromString(value));
   }
+
+  get timeCreated(): BigInt {
+    let value = this.get("timeCreated");
+    return value.toBigInt();
+  }
+
+  set timeCreated(value: BigInt) {
+    this.set("timeCreated", Value.fromBigInt(value));
+  }
 }
