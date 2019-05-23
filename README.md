@@ -1,6 +1,6 @@
 # Gnosis Safe Subgraph
 
-This subgraph indexes new deployments of contract-based accounts for users of the Gnosis Safe.
+Modern wallets like the Gnosis Safe use contract-based accounts to manage funds. This subgraph indexes new deployments of contract-based accounts for users of the Gnosis Safe.
 
 There's a UI that uses this subgraph at [contractbasedaccounts.com](https://contractbasedaccounts.com).
 
@@ -58,3 +58,7 @@ Get the two most recent Gnosis Safe contract-based accounts, with the newest one
 ```
 
 Built by the [Tasit](https://tasit.io) team.
+
+### Notes
+
+As the creation of new contracts is a very gas-consuming operation, the Gnosis Safe contracts use a proxy pattern where a master copy of the contract is deployed once and all its copies are deployed as minimal proxy contracts pointing to the master copy contract. This means that we can track the creation of new contract-based accounts by indexing an event from the ProxyFactory contract.
