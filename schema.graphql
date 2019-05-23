@@ -1,3 +1,4 @@
 type ContractBasedAccount @entity {
   id: ID!
+  timeCreated: BigInt!
 }
