@@ -11,15 +11,15 @@
     "deploy-local": "graph deploy tasitlabs/gnosis-safe --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "^0.12.0",
-    "@graphprotocol/graph-ts": "^0.12.0"
+    "@graphprotocol/graph-cli": "^0.15.3",
+    "@graphprotocol/graph-ts": "^0.15.1"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
-    "truffle": "^5.0.4",
-    "truffle-contract": "^4.0.17",
-    "truffle-hdwallet-provider": "^1.0.4"
+    "truffle": "^5.0.42",
+    "truffle-contract": "^4.0.31",
+    "truffle-hdwallet-provider": "^1.0.17"
   },
   "repository": {
     "type": "git",
